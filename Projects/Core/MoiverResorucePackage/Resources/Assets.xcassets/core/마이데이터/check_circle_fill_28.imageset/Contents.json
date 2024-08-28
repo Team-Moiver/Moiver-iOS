@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "check_circle_fill_28.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}
