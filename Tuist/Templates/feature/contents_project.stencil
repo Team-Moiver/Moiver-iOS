@@ -1,0 +1,14 @@
+import ProjectDescription
+import ProjectDescriptionHelpers
+import UtilityPlugin
+
+private let iOSTargetVersion = "17.2"
+
+let project = Project.feature(
+    name: "{{ name }}",
+    platform: .iOS,
+    targets: [],
+    iOSTargetVersion: iOSTargetVersion,
+    dependencies: [],
+    exampleDependencies: []
+)

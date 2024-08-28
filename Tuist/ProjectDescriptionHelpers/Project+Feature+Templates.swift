@@ -53,7 +53,7 @@ extension Project {
             let implementation = Target(
                 name: "\(name)Implementation",
                 platform: platform,
-                product: .framework,
+                product: .staticFramework,
                 bundleId: "kr.co.Moiver.implementation.\(name)Implementation",
                 deploymentTarget: .iOS(targetVersion: iOSTargetVersion, devices: [.iphone]),
                 infoPlist: .default,
@@ -68,6 +68,36 @@ extension Project {
                 settings: .settings(base: settings, configurations: XCConfig.feature)
             )
             
+            let ui = Target(
+                name: "\(name)UI",
+                platform: platform,
+                product: .framework,
+                bundleId: "kr.co.Moiver.ui.\(name)UI",
+                deploymentTarget: .iOS(targetVersion: iOSTargetVersion, devices: [.iphone]),
+                infoPlist: .default,
+                sources: ["UI/Sources/**"],
+                resources: ["UI/Resources/**"],
+                dependencies: [
+                    .target(name: "\(name)Interface"),
+                    .target(name: "\(name)Model"),
+                    .Project.Core.MoiverCoreKit.MoiverCoreKit,
+                    .Project.Core.MoiverThirdPartyLibManager.MoiverThirdPartyLibManager
+                ],
+                settings: .settings(base: settings, configurations: XCConfig.feature)
+            )
+            
+            let model = Target(
+                name: "\(name)Model",
+                platform: platform,
+                product: .staticFramework,
+                bundleId: "kr.co.Moiver.model.\(name)Model",
+                deploymentTarget: .iOS(targetVersion: iOSTargetVersion, devices: [.iphone]),
+                infoPlist: .default,
+                sources: ["Model/Sources/**"],
+                resources: ["Model/Resources/**"],
+                dependencies: [],
+                settings: .settings(base: settings, configurations: XCConfig.feature)
+            )
             
             projectTargets.append(interface)
             projectTargets.append(implementation)
