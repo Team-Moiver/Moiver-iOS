@@ -16,5 +16,10 @@ let project = Project.framework(
     platform: .iOS,
     targets: [.dynamicFramework],
     iOSTargetVersion: iOSTargetVersion,
-    dependencies: []
+    dependencies: [
+        .Project.Feature.FeatureKit.Home.Interface,
+        .Project.Feature.FeatureKit.Home.Implementation,
+        .Project.Feature.FeatureKit.Main.Interface,
+        .Project.Feature.FeatureKit.Main.Implementation
+    ]
 )

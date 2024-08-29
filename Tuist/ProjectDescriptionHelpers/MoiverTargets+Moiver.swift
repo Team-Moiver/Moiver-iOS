@@ -32,8 +32,7 @@ extension Target.MoiverTargets {
             ],
             scripts: .init(),
             dependencies: dependencies,
-            settings: MoiverCore.Constants.settingsTargetMoiver,
-            additionalFiles: [.glob(pattern: .relativeToManifest("AppSuit/stscore.h"))]
+            settings: MoiverCore.Constants.settingsTargetMoiver
         )
     }
 }
