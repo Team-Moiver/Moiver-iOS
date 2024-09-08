@@ -9,7 +9,7 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 import UtilityPlugin
 
-private let projectName = "MoiverResorucePackage"
+private let projectName = "MoiverResourcePackage"
 private let iOSTargetVersion = "17.2"
 
 let project = Project.framework(

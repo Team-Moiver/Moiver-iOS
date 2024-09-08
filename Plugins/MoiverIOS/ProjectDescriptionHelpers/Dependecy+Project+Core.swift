@@ -13,7 +13,7 @@ public extension Dep.Project.Core.MoiverCoreKit {
 }
 
 public extension Dep.Project.Core.MoiverResorucePackage {
-    static let group = "MoiverResorucePackage"
+    static let group = "MoiverResourcePackage"
     static let MoiverResorucePackage: Dep = .project(target: "\(group)", path: .relativeToRoot("Projects/Core/\(group)"))
 }
 
