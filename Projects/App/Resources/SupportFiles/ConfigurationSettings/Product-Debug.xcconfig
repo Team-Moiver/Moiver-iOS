@@ -12,3 +12,4 @@
 #include "Project-Shared.xcconfig"
 
 EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
+PRODUCT_BUNDLE_IDENTIFIER = com.moiver.stg

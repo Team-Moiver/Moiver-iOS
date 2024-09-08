@@ -17,6 +17,8 @@ let project = Project.framework(
     platform: .iOS,
     targets: [.dynamicFramework],
     iOSTargetVersion: iOSTargetVersion,
-    dependencies: []
+    dependencies: [
+      .Project.Core.MoiverThirdPartyLibManager.MoiverThirdPartyLibManager
+    ]
 )
 

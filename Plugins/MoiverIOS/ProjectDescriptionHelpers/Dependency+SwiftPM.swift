@@ -12,10 +12,6 @@ extension Dep {
     public enum SwiftPM: String, CaseIterable{
         case KakaoSDKCommon
         case KakaoSDKShare
-        case FirebaseAnalytics
-        case FirebaseCrashlytics
-        case FirebaseMessaging
-        case FirebaseAnalyticsOnDeviceConversion
         case Swinject
     }
 }

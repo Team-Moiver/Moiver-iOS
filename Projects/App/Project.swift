@@ -16,6 +16,7 @@ let infoPlistPath: String = "Resources/SupportFiles/Info.plist"
 
 let project = Project.app(name: projectName,
                           platform: .iOS,
+                          
                           iOSTargetVersion: iOSTargetVersion,
                           settings: .settings(configurations: MoiverCore.configurations),
                           infoPlist: infoPlistPath,
