@@ -53,7 +53,7 @@ extension Project {
             let implementation = Target(
                 name: "\(name)Implementation",
                 platform: platform,
-                product: .staticFramework,
+                product: .framework,
                 bundleId: "kr.co.Moiver.implementation.\(name)Implementation",
                 deploymentTarget: .iOS(targetVersion: iOSTargetVersion, devices: [.iphone]),
                 infoPlist: .default,
