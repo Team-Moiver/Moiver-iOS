@@ -8,6 +8,7 @@
 
 import SwiftUI
 import MoiverResourcePackage
+import MoiverCoreKit
 
 enum SunPhase {
   case sunrise
@@ -60,9 +61,7 @@ struct HomeView: View {
                 Spacer()
                   .frame(width: 12)
                 Text("31°")
-                  .font(Font(MoiverResourcePackageFontFamily.Pretendard.bold.font(size: 48) as CTFont)
-                    )
-                  .lineSpacing(2)
+                  .moiverFont(.title01)
                   .foregroundStyle(MoiverResourcePackageAsset.black01.swiftUIColor)
                 Spacer()
                 VStack(content: {
@@ -70,27 +69,18 @@ struct HomeView: View {
                     Spacer()
                     Text("↓20°")
                       .foregroundStyle(MoiverResourcePackageAsset.blue01.swiftUIColor)
-                      .font(Font(MoiverResourcePackageFontFamily.Pretendard.regular.font(size: 14) as CTFont)
-                        )
-                      .lineSpacing(-0.6)
+                      .moiverFont(.body07)
                     Text("↑25°")
                       .foregroundStyle(MoiverResourcePackageAsset.red01.swiftUIColor)
-                      .foregroundStyle(MoiverResourcePackageAsset.blue01.swiftUIColor)
-                      .font(Font(MoiverResourcePackageFontFamily.Pretendard.regular.font(size: 14) as CTFont)
-                        )
-                      .lineSpacing(-0.6)
+                      .moiverFont(.body07)
                     Text("체감 22°")
                       .foregroundStyle(MoiverResourcePackageAsset.black01.swiftUIColor)
-                      .font(Font(MoiverResourcePackageFontFamily.Pretendard.regular.font(size: 14) as CTFont)
-                        )
-                      .lineSpacing(-0.6)
+                      .moiverFont(.body07)
                   })
                   HStack {
                     Spacer()
                     Text("어제랑 같은 온도에요")
-                      .foregroundStyle(MoiverResourcePackageAsset.black01.swiftUIColor)
-                      .font(Font(MoiverResourcePackageFontFamily.Pretendard.medium.font(size: 20) as CTFont)
-                        )
+                      .moiverFont(.body01)
                       .lineSpacing(-0.6)
                   }
                 })
@@ -98,24 +88,28 @@ struct HomeView: View {
               HStack(content: {
                 MoiverResourcePackageAsset.icnDust.swiftUIImage
                 Text("나쁨")
+                  .moiverFont(.body04)
                 MoiverResourcePackageAsset.grey01.swiftUIColor
                   .frame(width: 1, height: 22)
                   .opacity(0.3)
                   .clipShape(.rect(cornerRadius: 0.5))
                 MoiverResourcePackageAsset.icnWind.swiftUIImage
                 Text("선선")
+                  .moiverFont(.body04)
                 MoiverResourcePackageAsset.grey01.swiftUIColor
                   .frame(width: 1, height: 22)
                   .opacity(0.3)
                   .clipShape(.rect(cornerRadius: 0.5))
                 MoiverResourcePackageAsset.icnHumidity.swiftUIImage
                 Text("찐득")
+                  .moiverFont(.body04)
                 MoiverResourcePackageAsset.grey01.swiftUIColor
                   .frame(width: 1, height: 22)
                   .opacity(0.3)
                   .clipShape(.rect(cornerRadius: 0.5))
                 MoiverResourcePackageAsset.icnRain.swiftUIImage
                 Text("60%")
+                  .moiverFont(.body04)
               })
               .foregroundStyle(MoiverResourcePackageAsset.black01.swiftUIColor)
             })
