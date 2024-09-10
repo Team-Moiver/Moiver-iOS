@@ -10,7 +10,7 @@ import ProjectDescriptionHelpers
 import UtilityPlugin
 
 private let projectName = "MoiverThirdPartyLibManager"
-private let iOSTargetVersion = "17.2"
+private let iOSTargetVersion = "17.0"
 
 let dependencies: [Dep] =
 Dep.SwiftPM.allCases.map { $0.packageSource }

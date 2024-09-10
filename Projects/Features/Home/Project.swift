@@ -2,7 +2,7 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 import UtilityPlugin
 
-private let iOSTargetVersion = "17.2"
+private let iOSTargetVersion = "17.0"
 
 let project = Project.feature(
     name: "Home",

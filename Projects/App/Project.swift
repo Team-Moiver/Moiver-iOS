@@ -10,7 +10,7 @@ import ProjectDescriptionHelpers
 import UtilityPlugin
 
 private let projectName = "Moiver"
-private let iOSTargetVersion = "17.2"
+private let iOSTargetVersion = "17.0"
 
 let infoPlistPath: String = "Resources/SupportFiles/Info.plist"
 

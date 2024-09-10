@@ -9,7 +9,7 @@ import ProjectDescriptionHelpers
 import UtilityPlugin
 
 private let projectName = "MoiverCoreKit"
-private let iOSTargetVersion = "17.2"
+private let iOSTargetVersion = "17.0"
 
 let project = Project.framework(
     name: projectName,
