@@ -20,6 +20,8 @@ let project = Project.framework(
         .Project.Feature.FeatureKit.Home.Interface,
         .Project.Feature.FeatureKit.Home.Implementation,
         .Project.Feature.FeatureKit.Main.Interface,
-        .Project.Feature.FeatureKit.Main.Implementation
+        .Project.Feature.FeatureKit.Main.Implementation,
+        .Project.Feature.FeatureKit.Community.Interface,
+        .Project.Feature.FeatureKit.Community.Implementation
     ]
 )
