@@ -8,7 +8,7 @@
 
 import SwiftUI
 import MoiverResourcePackage
-import MoiverCoreKit
+import MoiverUI
 
 enum SunPhase {
   case sunrise

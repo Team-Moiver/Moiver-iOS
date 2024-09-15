@@ -18,6 +18,8 @@ let project = Project.framework(
     iOSTargetVersion: iOSTargetVersion,
     dependencies: [
         .Project.Core.Network.MoiverAPIs.MoiverAPIs,
-        .Project.Core.Network.Networking.Networking
+        .Project.Core.Network.Networking.Networking,
+        .Project.Core.MoiverUtils.MoiverUtils,
+        .Project.Core.MoiverUI.MoiverUI
     ]
 )

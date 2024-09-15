@@ -40,3 +40,8 @@ public extension Dep.Project.Core.Network.Networking {
 
     static let Networking = project(name: "Networking")
 }
+
+public extension Dep.Project.Core.MoiverUI {
+    static let group = "MoiverUI"
+    static let MoiverUI: Dep = .project(target: "\(group)", path: .relativeToRoot("Projects/Core/\(group)"))
+}
