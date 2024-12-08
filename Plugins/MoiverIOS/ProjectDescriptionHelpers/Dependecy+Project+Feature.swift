@@ -14,6 +14,7 @@ extension Dep {
             public struct FeatureKit {
                 public struct Home {}
                 public struct Main {}
+                public struct Onboarding {}
             }
         }
         
@@ -53,6 +54,14 @@ public extension Dep.Project.Feature.FeatureKit.Home {
 
 public extension Dep.Project.Feature.FeatureKit.Main {
     static let group = "Main"
+    static func project(name: String) -> Dep { .project(target: name, path: .relativeToRoot("Projects/Features/\(group)")) }
+    
+    static let Interface        = project(name: "\(group)Interface")
+    static let Implementation    = project(name: "\(group)Implementation")
+}
+
+public extension Dep.Project.Feature.FeatureKit.Onboarding {
+    static let group = "Onboarding"
     static func project(name: String) -> Dep { .project(target: name, path: .relativeToRoot("Projects/Features/\(group)")) }
     
     static let Interface        = project(name: "\(group)Interface")
