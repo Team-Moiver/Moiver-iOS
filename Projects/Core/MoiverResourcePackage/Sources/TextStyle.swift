@@ -12,6 +12,7 @@ import UIKit.UIFont
 public enum MoiverTextStyle {
   case title01
   case title02
+  case title03
   case body01
   case body02
   case body03
@@ -32,6 +33,7 @@ public enum MoiverTextStyle {
       MoiverResourcePackageFontFamily.Pretendard.bold
       
     case .title02,
+        .title03,
         .body05,
         .body08
       :
@@ -55,6 +57,7 @@ public enum MoiverTextStyle {
     case .title01:
       48
     case .title02,
+        .title03,
         .body01:
       20
     case .body02:
