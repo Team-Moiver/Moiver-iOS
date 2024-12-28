@@ -1,5 +1,5 @@
 //
-//  SetNickname.swift
+//  SetNicknameView.swift
 //  OnboardingInterface
 //
 //  Created by Woochan Park on 12/22/24.
@@ -9,7 +9,7 @@
 import SwiftUI
 import MoiverResourcePackage
 
-struct SetNickname: View {
+struct SetNicknameView: View {
   @State private var nickname: String = ""
   @State private var nicknameCreationGuide: String = "12글자 이내로 작성해 주세요 😓"
   
@@ -72,5 +72,5 @@ struct SetNickname: View {
 }
 
 #Preview {
-  SetNickname()
+  SetNicknameView()
 }
